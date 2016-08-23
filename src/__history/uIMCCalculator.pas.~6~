@@ -1,0 +1,29 @@
+unit uIMCCalculator;
+
+interface
+
+uses
+  I.IMCCalculator;
+
+type
+
+  TIMCCalculator = class(TInterfacedObject, IIMCCalculator)
+  public
+    function Execute(const _AID: Integer): Currency;
+
+  end;
+
+implementation
+
+{ TIMCCalculator }
+
+
+
+{ TIMCCalculator }
+
+function TIMCCalculator.Execute(const _AID: Integer): Currency;
+begin
+
+end;
+
+end.

@@ -1,0 +1,21 @@
+unit uIMCCalculator;
+
+interface
+
+
+type
+
+  TIMCCalculator = class
+    function Execute: Boolean;
+  end;
+
+implementation
+
+{ TIMCCalculator }
+
+function TIMCCalculator.Execute: Boolean;
+begin
+
+end;
+
+end.

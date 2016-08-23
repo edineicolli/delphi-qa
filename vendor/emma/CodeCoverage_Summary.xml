@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="Windows-1252" standalone="no"?>
+<report>
+  <stats>
+    <packages value="1"/>
+    <classes value="1"/>
+    <methods value="2"/>
+    <srcfiles value="1"/>
+    <srclines value="9"/>
+    <totallines value="9"/>
+    <coveredlines value="8"/>
+    <coveredpercent value="88"/>
+  </stats>
+  <data>
+    <all name="all classes">
+      <coverage type="class, %" value="100%   (1/1)"/>
+      <coverage type="method, %" value="100%   (2/2)"/>
+      <coverage type="block, %" value="89%   (8/9)"/>
+      <coverage type="line, %" value="89%   (8/9)"/>
+      <package name="uIMCCalculator">
+        <coverage type="class, %" value="100%   (1/1)"/>
+        <coverage type="method, %" value="100%   (2/2)"/>
+        <coverage type="block, %" value="89%   (8/9)"/>
+        <coverage type="line, %" value="89%   (8/9)"/>
+        <srcfile name="uIMCCalculator.pas">
+          <coverage type="class, %" value="100%   (1/1)"/>
+          <coverage type="method, %" value="100%   (2/2)"/>
+          <coverage type="block, %" value="89%   (8/9)"/>
+          <coverage type="line, %" value="89%   (8/9)"/>
+          <class name="TIMCCalculator">
+            <coverage type="class, %" value="100%   (1/1)"/>
+            <coverage type="method, %" value="100%   (2/2)"/>
+            <coverage type="block, %" value="89%   (8/9)"/>
+            <coverage type="line, %" value="89%   (8/9)"/>
+            <method name="Create">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (3/3)"/>
+              <coverage type="line, %" value="100%   (3/3)"/>
+            </method>
+            <method name="Execute">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="83%   (5/6)"/>
+              <coverage type="line, %" value="83%   (5/6)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+    </all>
+  </data>
+</report>

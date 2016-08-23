@@ -1,0 +1,12 @@
+unit uEnum;
+
+interface
+
+
+type
+
+  TTipoTabela = (ttPessoa);
+
+implementation
+
+end.

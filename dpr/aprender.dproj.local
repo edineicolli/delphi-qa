@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/17 19:27:05.000.530,=C:\Users\Edinei\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/08/17 19:27:52.000.812,C:\Users\Edinei\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\apps\desbravador\src\Main.dfm</Transaction>
+    <Transaction>2016/08/17 19:27:52.000.812,C:\Users\Edinei\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\apps\desbravador\src\Main.pas</Transaction>
+    <Transaction>2016/08/17 19:29:55.000.194,C:\Users\Edinei\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\apps\desbravador\src\aprender.dproj</Transaction>
+    <Transaction>2016/08/17 19:30:27.000.777,C:\apps\desbravador\src\aprender.dproj=C:\apps\desbravador\dpr\aprender.dproj</Transaction>
+    <Transaction>2016/08/17 19:35:31.000.175,=C:\apps\desbravador\dpr\Unit2.pas</Transaction>
+    <Transaction>2016/08/17 19:43:01.000.559,C:\apps\desbravador\src\uFrmBase.dfm=C:\apps\desbravador\dpr\Unit2.dfm</Transaction>
+    <Transaction>2016/08/17 19:43:01.000.559,C:\apps\desbravador\src\uFrmBase.pas=C:\apps\desbravador\dpr\Unit2.pas</Transaction>
+    <Transaction>2016/08/17 19:43:51.000.461,=C:\apps\desbravador\dpr\Unit1.pas</Transaction>
+    <Transaction>2016/08/17 19:46:47.000.797,C:\apps\desbravador\src\uFrmBaseCad.dfm=C:\apps\desbravador\dpr\Unit1.dfm</Transaction>
+    <Transaction>2016/08/17 19:46:47.000.797,C:\apps\desbravador\src\uFrmBaseCad.pas=C:\apps\desbravador\dpr\Unit1.pas</Transaction>
+    <Transaction>2016/08/17 19:51:18.000.187,=C:\apps\desbravador\dpr\Unit1.pas</Transaction>
+    <Transaction>2016/08/17 19:52:14.000.416,C:\apps\desbravador\src\I.Table.pas=C:\apps\desbravador\dpr\Unit1.pas</Transaction>
+    <Transaction>2016/08/17 19:53:57.000.901,=C:\apps\desbravador\dpr\Unit1.pas</Transaction>
+    <Transaction>2016/08/17 20:05:04.000.361,C:\apps\desbravador\src\uEnum.pas=C:\apps\desbravador\dpr\Unit1.pas</Transaction>
+    <Transaction>2016/08/17 20:12:01.000.593,=C:\apps\desbravador\dpr\Unit1.pas</Transaction>
+    <Transaction>2016/08/17 20:13:36.000.621,C:\apps\desbravador\src\uCadPessoa.dfm=C:\apps\desbravador\dpr\Unit1.dfm</Transaction>
+    <Transaction>2016/08/17 20:13:36.000.621,C:\apps\desbravador\src\uCadPessoa.pas=C:\apps\desbravador\dpr\Unit1.pas</Transaction>
+    <Transaction>2016/08/17 20:58:37.000.701,=C:\apps\desbravador\dpr\Unit1.pas</Transaction>
+    <Transaction>2016/08/17 20:59:29.000.283,C:\apps\desbravador\dpr\Unit1.pas=C:\apps\desbravador\src\uIMCCalculator.pas</Transaction>
+  </Transactions>
+</BorlandProject>

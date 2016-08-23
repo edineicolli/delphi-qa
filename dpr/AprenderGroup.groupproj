@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{839F0217-D32E-47DF-9A5E-3504A8DE8EFD}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="aprender.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\test\TestAprender.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="aprender">
+        <MSBuild Projects="aprender.dproj"/>
+    </Target>
+    <Target Name="aprender:Clean">
+        <MSBuild Projects="aprender.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="aprender:Make">
+        <MSBuild Projects="aprender.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestAprender">
+        <MSBuild Projects="..\test\TestAprender.dproj"/>
+    </Target>
+    <Target Name="TestAprender:Clean">
+        <MSBuild Projects="..\test\TestAprender.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestAprender:Make">
+        <MSBuild Projects="..\test\TestAprender.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="aprender;TestAprender"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="aprender:Clean;TestAprender:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="aprender:Make;TestAprender:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/17 19:30:17.000.574,C:\Users\Edinei\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\apps\desbravador\dpr\AprenderGroup.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\apps\desbravador\test\TestAprender.dproj"/>
+	</Default.Personality>
+</BorlandProject>

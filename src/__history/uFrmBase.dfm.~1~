@@ -1,0 +1,55 @@
+object FrmBase: TFrmBase
+  Left = 0
+  Top = 0
+  ClientHeight = 362
+  ClientWidth = 584
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  Visible = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  object panelBotoes: TPanel
+    Left = 0
+    Top = 294
+    Width = 584
+    Height = 68
+    Align = alBottom
+    TabOrder = 0
+    ExplicitTop = 312
+    ExplicitWidth = 573
+    object BtnFechar: TBitBtn
+      AlignWithMargins = True
+      Left = 505
+      Top = 4
+      Width = 75
+      Height = 60
+      Align = alRight
+      Caption = 'Fechar'
+      TabOrder = 0
+      OnClick = BtnFecharClick
+      ExplicitLeft = 440
+      ExplicitTop = 24
+      ExplicitHeight = 25
+    end
+  end
+  object panelCentral: TPanel
+    Left = 0
+    Top = 0
+    Width = 584
+    Height = 294
+    Align = alClient
+    TabOrder = 1
+    ExplicitLeft = 272
+    ExplicitTop = 120
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+  end
+end

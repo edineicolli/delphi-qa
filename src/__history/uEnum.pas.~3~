@@ -1,0 +1,15 @@
+unit uEnum;
+
+interface
+
+
+type
+
+  TTipoTabela = (ttPessoa, ttUsuario, ttProduto);
+
+const
+  TTipoTabelaNome: TTipoTabela = ('PESSOA', 'USUARIO', 'PRODUTO');
+
+implementation
+
+end.

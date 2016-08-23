@@ -1,0 +1,13 @@
+unit I.Pessoa;
+
+interface
+
+type
+
+  IPessoa = interface(TInterfacedObject, IInvokable)
+    ['{067AF26C-8235-49B8-90AC-75EE69BA9D0B}']
+  end;
+
+implementation
+
+end.

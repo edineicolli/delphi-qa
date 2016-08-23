@@ -1,0 +1,33 @@
+unit uFrmBase;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  TFrmBase = class(TForm)
+    panelBotoes: TPanel;
+    panelCentral: TPanel;
+    BtnFechar: TBitBtn;
+    procedure BtnFecharClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmBase: TFrmBase;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmBase.BtnFecharClick(Sender: TObject);
+begin
+  Close;
+end;
+
+end.

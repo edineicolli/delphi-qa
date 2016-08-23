@@ -1,0 +1,85 @@
+unit uTestIMCCalculator;
+
+interface
+uses
+  DUnitX.TestFramework,
+  Delphi.Mocks,
+  I.IMCCalculator;
+
+type
+
+  [TestFixture]
+  TTestIMCCalculator = class(TObject)
+  public
+    [Setup]
+    procedure Setup;
+    [TearDown]
+    procedure TearDown;
+    // Sample Methods
+    // Simple single Test
+    [Test]
+    procedure Test1;
+    // Test with TestCase Atribute to supply parameters.
+    [Test]
+    [TestCase('TestA','1,2')]
+    [TestCase('TestB','3,4')]
+    procedure Test2(const AValue1 : Integer;const AValue2 : Integer);
+    [Test]
+    procedure TesteMeuIMC;
+  end;
+
+implementation
+
+uses
+  uIMCCalculator, I.PessoaDAO, uPessoaDAO, System.Generics.Collections,
+  System.Rtti, uPessoa, I.Pessoa;
+
+procedure TTestIMCCalculator.Setup;
+begin
+end;
+
+procedure TTestIMCCalculator.TearDown;
+begin
+end;
+
+procedure TTestIMCCalculator.Test1;
+begin
+end;
+
+procedure TTestIMCCalculator.Test2(const AValue1 : Integer;const AValue2 : Integer);
+begin
+end;
+
+procedure TTestIMCCalculator.TesteMeuIMC;
+var
+  pessoaDAO: TMock<IPessoaDAO>;
+  IMCCalculator: IIMCCalculator;
+  IMCValue: Currency;
+begin
+
+  pessoaDAO := TMock<IPessoaDAO>.Create;
+  pessoaDAO.Setup.WillExecute(
+    function (const args : TArray<TValue>; const ReturnType : TRttiType) : TValue
+    var
+      p: TPessoa;
+    begin
+      //Note - args[0] is the Self interface reference for the anon method, our first arg is [1]
+      p := TPessoa.Create;
+      p.Peso := 92;
+      p.Altura := 1.82;
+
+      Result := p;
+
+    end
+  ).When.Get(1);
+
+  IMCCalculator := TIMCCalculator.Create(pessoaDAO);
+  IMCValue := IMCCalculator.Execute(1);
+  Assert.AreEqual(IMCValue, 27.7744);
+
+
+end;
+
+initialization
+  TDUnitX.RegisterTestFixture(TTestIMCCalculator);
+end.

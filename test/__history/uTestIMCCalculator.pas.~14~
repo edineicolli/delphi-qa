@@ -1,0 +1,75 @@
+unit uTestIMCCalculator;
+
+interface
+uses
+  DUnitX.TestFramework,
+  Delphi.Mocks,
+  I.IMCCalculator;
+
+type
+
+  [TestFixture]
+  TTestIMCCalculator = class(TObject)
+  public
+    [Setup]
+    procedure Setup;
+    [TearDown]
+    procedure TearDown;
+    // Sample Methods
+    // Simple single Test
+    [Test]
+    procedure Test1;
+    // Test with TestCase Atribute to supply parameters.
+    [Test]
+    [TestCase('TestA','1,2')]
+    [TestCase('TestB','3,4')]
+    procedure Test2(const AValue1 : Integer;const AValue2 : Integer);
+    procedure TesteMeuIMC;
+  end;
+
+implementation
+
+uses
+  uIMCCalculator, I.PessoaDAO, uPessoaDAO;
+
+procedure TTestIMCCalculator.Setup;
+begin
+end;
+
+procedure TTestIMCCalculator.TearDown;
+begin
+end;
+
+procedure TTestIMCCalculator.Test1;
+begin
+end;
+
+procedure TTestIMCCalculator.Test2(const AValue1 : Integer;const AValue2 : Integer);
+begin
+end;
+
+procedure TTestIMCCalculator.TesteMeuIMC;
+var
+  pessoaDAO: TMock<IPessoaDAO>;
+  IMCCalculator: IIMCCalculator;
+begin
+
+  pessoaDAO := TMock<IPessoaDAO>.Create;
+  pessoaDAO.Setup.WillReturn(
+    procedure
+    begin
+        Result := TPessoa.Create;
+        pessoa.SetPeso(92);
+        pessoa.SetAltura(1.80);
+    end
+  ).When.Get(1);
+
+  IMCCalculator := TIMCCalculator.Create(pessoaDAO);
+  IMCCalculator.Execute(1);
+
+
+end;
+
+initialization
+  TDUnitX.RegisterTestFixture(TTestIMCCalculator);
+end.

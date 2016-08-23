@@ -1,0 +1,26 @@
+unit uCadPessoa;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFrmBaseCad, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls;
+
+type
+  TFrmBaseCad1 = class(TFrmBaseCad)
+    EdtNome: TEdit;
+    EdtCodigo: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmBaseCad1: TFrmBaseCad1;
+
+implementation
+
+{$R *.dfm}
+
+end.
